@@ -74,12 +74,12 @@ SELECT COUNT(*)
 FROM dim_cliente
 WHERE sexo = 'F'
 AND data_nascimento BETWEEN '1990-01-01' AND '1999-12-31';
-
+g
 --- Questão 13 ---
 
 SELECT COUNT(*)
 FROM dim_cliente
-WHERE SPLIT_PART(nome, ' ', 1) = 'Ana';
+WHERE nome LIKE 'Ana %'
 
 --- Questão 14 --- 
 
